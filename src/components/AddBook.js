@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Form, Alert, InputGroup, Button, ButtonGroup } from "react-bootstrap";
 import BookDataService from "../services/book.services";
+import '../App.css';
+import '../index.css';
+
 
 const AddBook = ({ id, setBookId }) => {
     const [title, setTitle] = useState("");
@@ -58,6 +61,7 @@ const AddBook = ({ id, setBookId }) => {
         if (id !== undefined && id !== "") {
             editHandler();
         }
+
     }, [id]);
     return (
         <>

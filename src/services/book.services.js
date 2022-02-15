@@ -1,6 +1,6 @@
 import { db } from "../firebase-config";
-
 import { collection, getDocs, getDoc, addDoc, updateDoc, deleteDoc, doc } from "firebase/firestore";
+import '../App.css';
 
 const bookCollectionRef = collection(db, "books");
 class BookDataService {

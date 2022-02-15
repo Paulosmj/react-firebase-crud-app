@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Table, Button } from "react-bootstrap";
 import BookDataService from "../services/book.services";
+import '../App.css';
+import '../index.css';
+
 
 const BooksList = ({ getBookId }) => {
     const [books, setBooks] = useState([]);
@@ -27,6 +30,8 @@ const BooksList = ({ getBookId }) => {
             </div>
 
             {/* <pre>{JSON.stringify(books, undefined, 2)}</pre>} */}
+
+
             <Table striped bordered hover size="sm">
                 <thead>
                     <tr>
